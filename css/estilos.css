@@ -1,0 +1,454 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f9ff;
+    color: #1e293b;
+}
+
+/* NAVBAR */
+.header{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i{
+    font-size: 2rem;
+    color: #0ea5e9;
+}
+
+.logo h2{
+    font-size: 1.3rem;
+    color: #0f172a;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.nav-links a:hover{
+    color: #0ea5e9;
+}
+
+/* HERO */
+.hero{
+    height: 100vh;
+    background:
+    linear-gradient(rgba(15,23,42,0.70),
+    rgba(14,165,233,0.55)),
+    url("https://gacetamedica.com/wp-content/uploads/2023/02/salud-y-tecnologia-1300745916-1068x601.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero-text{
+    max-width: 850px;
+}
+
+.hero-text h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 35px;
+    background: #0ea5e9;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover{
+    background: #0284c7;
+    transform: translateY(-3px);
+}
+
+/* ACERCA */
+.acerca{
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.acerca h2{
+    font-size: 2.7rem;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.acerca p{
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+/* SISTEMAS */
+.sistemas{
+    padding: 100px 10%;
+    background: white;
+}
+
+.sistemas h2{
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 50px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+}
+
+.card{
+    background: white;
+    border-radius: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,.08);
+    transition: .4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card i{
+    font-size: 3rem;
+    color: #0ea5e9;
+    margin-bottom: 20px;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card p{
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn-card{
+    background: #0ea5e9;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 12px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.btn-card:hover{
+    background: #0284c7;
+}
+
+/* FOOTER */
+footer{
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .header{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-text h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-text p{
+        font-size: 1.1rem;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+/* BENEFICIOS */
+.beneficios{
+    padding: 100px 10%;
+    background: linear-gradient(
+    to bottom,
+    #f4f9ff,
+    #ffffff
+    );
+}
+
+.beneficios-titulo{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.beneficios-titulo h2{
+    font-size: 2.8rem;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.beneficios-titulo p{
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.9;
+    color: #475569;
+    font-size: 1.1rem;
+}
+
+.beneficios-cards{
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+}
+
+.beneficio-card{
+    background: white;
+    padding: 40px 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow:
+    0 8px 30px rgba(0,0,0,.08);
+
+    transition: .4s;
+}
+
+.beneficio-card:hover{
+    transform: translateY(-12px);
+}
+
+.beneficio-card i{
+    font-size: 3rem;
+    color: #0ea5e9;
+    margin-bottom: 20px;
+}
+
+.beneficio-card h3{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.beneficio-card p{
+    line-height: 1.8;
+    color: #475569;
+}
+
+/* HERO PEQUEÑO */
+.hero-small{
+    height: 60vh;
+}
+
+/* INFO */
+.info-section{
+    padding: 100px 10%;
+    background: white;
+}
+
+.info-section h2{
+    color: #0f172a;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.info-section p{
+    line-height: 1.9;
+    color: #475569;
+}
+
+/* CAJA EJEMPLO */
+.ejemplo-box{
+    background: #e0f2fe;
+    margin: 60px auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.ejemplo-box h2{
+    margin-bottom: 20px;
+}
+
+.datos{
+    line-height: 2;
+}
+
+.btn-ejemplo{
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-ejemplo:hover{
+    background: #0ea5e9;
+}
+
+/* FORM */
+.form-section{
+    padding: 80px 10%;
+}
+
+.form-section h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formulario{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario input{
+    padding: 18px;
+    border-radius: 15px;
+    border: 1px solid #cbd5e1;
+}
+
+.btn-form{
+    background: #0ea5e9;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-form:hover{
+    background: #0d8fcb;
+}
+/* HISTORIAL */
+.resultado-section{
+    padding: 50px 10%;
+}
+
+.historial-clinico{
+    background: white;
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.08);
+}
+
+.historial-clinico h2{
+    color: #0f172a;
+    margin-bottom: 30px;
+}
+
+.paciente-info{
+    background: #f0f9ff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    line-height: 2;
+}
+
+.controles-box{
+    display: grid;
+    gap: 20px;
+}
+
+.control-item{
+    background: #eff6ff;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.control-item i{
+    color: #0284c7;
+    font-size: 1.5rem;
+}
+
+.btn-error{
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-error:hover{
+    background: #b91c1c;
+}
+
+/* SUBTEXTO HERO */
+.subtexto-hero{
+    margin-top: 20px;
+    font-size: 1.1rem !important;
+    color: #dbeafe;
+    opacity: .95;
+}

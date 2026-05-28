@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Seguridad de Historias Clínicas
+    </title>
+
+    <link rel="stylesheet"
+    href="css/estilos.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h2>
+                Sistema Inteligente de Salud
+            </h2>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero hero-small">
+
+        <div class="hero-text">
+
+            <h1>
+                Seguridad de Historias Clínicas
+            </h1>
+
+            <p>
+                Aplicación de números primos
+                para reforzar la seguridad
+                de códigos médicos.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPLICACIÓN -->
+    <section class="info-section">
+
+        <h2>
+            🔐 ¿Qué problema resuelve este sistema?
+        </h2>
+
+        <p>
+            En hospitales y centros médicos es
+            importante proteger la información
+            clínica de los pacientes. Muchas veces,
+            los códigos médicos pueden ser débiles
+            o fáciles de identificar, lo que puede
+            representar riesgos en la seguridad
+            de datos hospitalarios.
+        </p>
+
+        <p>
+            Este sistema propone el uso de
+            números primos para evaluar códigos
+            médicos y reforzar la protección
+            de historias clínicas.
+        </p>
+
+        <h2>
+            ❤️ ¿Cómo beneficia a la vida cotidiana?
+        </h2>
+
+        <p>
+            Permite fortalecer la seguridad
+            de información médica, ayudando a
+            hospitales y clínicas a manejar
+            códigos más seguros para proteger
+            datos de pacientes.
+        </p>
+
+        <h2>
+            🧠 ¿En qué algoritmo se basa?
+        </h2>
+
+        <p>
+            El sistema utiliza números primos,
+            que son aquellos que solamente
+            pueden dividirse entre 1 y sí
+            mismos.
+        </p>
+
+        <p>
+            Ejemplo:
+        </p>
+
+        <p>
+            2, 3, 5, 7, 11, 13, 17...
+        </p>
+
+        <p>
+            Se emplea JavaScript junto con
+            ciclos repetitivos
+            (<strong>for</strong>)
+            para verificar si un número tiene
+            más divisores, determinando así
+            si un código médico es seguro
+            o poco seguro.
+        </p>
+
+    </section>
+
+
+<!-- DATOS DOCENTE -->
+<section class="ejemplo-box">
+
+    <h2>
+        🧪 Datos de prueba
+    </h2>
+
+    <div class="datos">
+
+        <h3>
+            ✅ Ejemplo Correcto
+        </h3>
+
+        <p>
+            Código médico:
+            <strong>
+                10000019
+            </strong>
+        </p>
+
+        <br>
+
+        <h3>
+            ❌ Ejemplo Incorrecto
+        </h3>
+
+        <p>
+            Código médico:
+            <strong>
+                1234
+            </strong>
+        </p>
+
+        <p>
+            Este ejemplo generará un
+            error porque no cumple con
+            el mínimo de seguridad
+            hospitalaria.
+        </p>
+
+    </div>
+
+    <div class="botones-ejemplo">
+
+        <button
+        onclick="usarEjemploPrimo()"
+        class="btn-ejemplo">
+
+            Usar ejemplo correcto
+
+        </button>
+
+        <button
+        onclick="usarEjemploError()"
+        class="btn-error">
+
+            Probar ejemplo de error
+
+        </button>
+
+    </div>
+
+</section>
+
+
+    <!-- FORM -->
+    <section class="form-section">
+
+        <h2>
+            Verificación de Seguridad
+        </h2>
+
+        <div class="formulario">
+
+            <input
+            type="number"
+            id="codigo"
+            placeholder="Ingrese código médico">
+
+            <button
+            onclick="verificarPrimo()"
+            class="btn-form">
+
+                Verificar Seguridad
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULTADO -->
+    <section id="resultadoPrimo"
+    class="resultado-section">
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            Sistema Inteligente de Salud © 2026
+        </p>
+
+        <p>
+            Desarrollado por:
+            <strong>
+                Henry Quispe Ulo
+            </strong>
+        </p>
+
+    </footer>
+
+    <script src="js/primos.js"></script>
+
+</body>
+</html>

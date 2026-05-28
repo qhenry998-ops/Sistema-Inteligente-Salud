@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Sistema Inteligente de Seguimiento
+    </title>
+
+    <link rel="stylesheet"
+    href="css/estilos.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            <i class="fa-solid fa-brain"></i>
+
+            <h2>
+                Sistema Inteligente de Salud
+            </h2>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero hero-small">
+
+        <div class="hero-text">
+
+            <h1>
+                Sistema Inteligente de Seguimiento
+            </h1>
+
+            <p>
+                Integración de Fibonacci y números
+                primos para mejorar el seguimiento
+                médico y reforzar la seguridad clínica.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPLICACIÓN -->
+    <section class="info-section">
+
+        <h2>
+            🏥 ¿Qué problema resuelve este sistema?
+        </h2>
+
+        <p>
+            En el área médica es importante realizar
+            un seguimiento organizado del paciente y
+            mantener protegida la información clínica.
+            Muchas veces no existe un control adecuado
+            de revisiones médicas ni sistemas simples
+            para fortalecer la seguridad de códigos.
+        </p>
+
+        <p>
+            Este sistema combina la secuencia
+            Fibonacci para organizar controles médicos
+            progresivos y números primos para evaluar
+            la seguridad de códigos clínicos.
+        </p>
+
+        <h2>
+            ❤️ ¿Cómo beneficia a la vida cotidiana?
+        </h2>
+
+        <p>
+            Facilita el seguimiento médico,
+            mejora la organización hospitalaria
+            y ayuda a proteger información
+            sensible de pacientes.
+        </p>
+
+        <h2>
+            🧠 ¿En qué algoritmo se basa?
+        </h2>
+
+        <p>
+            Se basa en la serie Fibonacci para
+            programar controles médicos y en
+            números primos para validar códigos
+            clínicos seguros.
+        </p>
+
+        <p>
+            La lógica se implementa usando
+            JavaScript mediante ciclos
+            <strong>for</strong>,
+            condicionales
+            <strong>if</strong>
+            y variables.
+        </p>
+
+    </section>
+
+
+    <!-- DATOS DOCENTE -->
+    <section class="ejemplo-box">
+
+        <h2>
+            🧪 Datos de prueba 
+        </h2>
+
+        <div class="datos">
+
+            <h3>
+                ✅ Ejemplo Correcto
+            </h3>
+
+            <p>
+                María Fernández
+            </p>
+
+            <p>
+                42 años
+            </p>
+
+            <p>
+                Hipertensión arterial
+            </p>
+
+            <p>
+                Código:
+                10000019
+            </p>
+
+            <p>
+                8 controles
+            </p>
+
+            <br>
+
+            <h3>
+                ❌ Ejemplo de Error
+            </h3>
+
+            <p>
+                Pedro Rojas
+            </p>
+
+            <p>
+                35 años
+            </p>
+
+            <p>
+                Diabetes
+            </p>
+
+            <p>
+                Código:
+                1234
+            </p>
+
+        </div>
+
+        <div class="botones-ejemplo">
+
+            <button
+            onclick="usarEjemploCombinado()"
+            class="btn-ejemplo">
+
+                Usar ejemplo correcto
+
+            </button>
+
+            <button
+            onclick="usarErrorCombinado()"
+            class="btn-error">
+
+                Probar ejemplo de error
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FORM -->
+    <section class="form-section">
+
+        <h2>
+            Sistema de Seguimiento
+        </h2>
+
+        <div class="formulario">
+
+            <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre del paciente">
+
+            <input
+            type="number"
+            id="edad"
+            placeholder="Edad">
+
+            <input
+            type="text"
+            id="diagnostico"
+            placeholder="Diagnóstico">
+
+            <input
+            type="number"
+            id="codigo"
+            placeholder="Código médico">
+
+            <input
+            type="number"
+            id="controles"
+            placeholder="Cantidad de controles">
+
+            <button
+            onclick="generarSistema()"
+            class="btn-form">
+
+                Generar Seguimiento Inteligente
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULTADO -->
+    <section
+    id="resultadoCombinado"
+    class="resultado-section">
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            Sistema Inteligente de Salud © 2026
+        </p>
+
+        <p>
+            Desarrollado por:
+            <strong>
+                Henry Quispe Ulo
+            </strong>
+        </p>
+
+    </footer>
+
+    <script src="js/combinado.js"></script>
+
+</body>
+</html>
